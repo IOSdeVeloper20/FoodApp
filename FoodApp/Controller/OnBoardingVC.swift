@@ -50,6 +50,8 @@ class OnBoardingVC: UIViewController {
         super.viewDidLoad()
         CollectionView.delegate = self
         CollectionView.dataSource = self
+        
+        PageControl.numberOfPages = slides.count
     }
 }
 

@@ -16,6 +16,7 @@
 		23723A6D298880CE00AE2C16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A6C298880CE00AE2C16 /* Constants.swift */; };
 		23723A6F298883FE00AE2C16 /* OnBoardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A6E298883FE00AE2C16 /* OnBoardingSlide.swift */; };
 		23723A712988872D00AE2C16 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A702988872D00AE2C16 /* OnBoardingCollectionViewCell.swift */; };
+		23E2D896298937F400F31400 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2D895298937F400F31400 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		23723A6C298880CE00AE2C16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23723A6E298883FE00AE2C16 /* OnBoardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlide.swift; sourceTree = "<group>"; };
 		23723A702988872D00AE2C16 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		23E2D895298937F400F31400 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				23723A6A2988150D00AE2C16 /* OnBoardingVC.swift */,
 				23723A702988872D00AE2C16 /* OnBoardingCollectionViewCell.swift */,
+				23E2D895298937F400F31400 /* HomeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23723A4D2988108600AE2C16 /* AppDelegate.swift in Sources */,
+				23E2D896298937F400F31400 /* HomeVC.swift in Sources */,
 				23723A4F2988108600AE2C16 /* SceneDelegate.swift in Sources */,
 				23723A6B2988150D00AE2C16 /* OnBoardingVC.swift in Sources */,
 				23723A712988872D00AE2C16 /* OnBoardingCollectionViewCell.swift in Sources */,
