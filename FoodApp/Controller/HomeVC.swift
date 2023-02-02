@@ -31,7 +31,7 @@ class HomeVC: UIViewController {
 
     //function manually register for cell
     private func registerXibCell () {
-        FoodCategoryCollectionView.register(UINib(nibName: Constants.CollectionCell_ID, bundle: nil), forCellWithReuseIdentifier: Constants.CollectionCell_ID)
+        FoodCategoryCollectionView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Constants.CollectionCell_ID)
     }
 }
 
@@ -40,7 +40,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categories.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CollectionCell_ID, for: indexPath) as! CategoryCollectionViewCell
         return cell
