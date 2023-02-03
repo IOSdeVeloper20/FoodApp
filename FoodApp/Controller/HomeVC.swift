@@ -43,6 +43,8 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CategoryCell_ID, for: indexPath) as! CategoryCollectionViewCell
+        // to set or send data to setup function in cell to be shown
+        cell.setUp(category: categories[indexPath.row])
         return cell
     }
 }
