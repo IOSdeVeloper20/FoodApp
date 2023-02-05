@@ -15,7 +15,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     // Fuction to set the cell of categories
     func setUp(category: FoodCellInfo) {
-        CategoryImageView.kf.setImage(with: category.image.asUrl)
+        CategoryImageView.kf.setImage(with: category.image?.asUrl)
         CategoryLabel.text = category.title
     }
 }

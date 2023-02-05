@@ -10,8 +10,7 @@ import Foundation
 struct Constants {
     static let OnBoardingCollectionID = "OnBoardingCollectionID"
     static let mainNavigation = "MainNC"
-//    static let FoodCategoryCell_ID = "FoodCatCollectionCellId"
-//    static let PopularDishesCell_ID = "popularDishesCollectionCellID"
-//    static let ChefSpecialsCell_ID = "chef'sSpecialsCollectionCellID"
-    static let CategoryCell_ID = "CategoryCollectionCell"
+    static let CategoryCell_ID = "CategoryCollectionViewCell"
+    static let PopularDishesCell_ID = "PopularDishesCollectionViewCell"
+    static let SpecialDishesCell_ID = "SpecialDishCollectionViewCell"
 }

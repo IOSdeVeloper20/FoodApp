@@ -8,7 +8,7 @@
 import UIKit
 
 struct FoodCellInfo {
-    let id: String
-    let title: String
-    let image: String
+    let id: String?
+    let title: String?
+    let image: String?
 }
