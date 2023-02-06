@@ -15,10 +15,10 @@ class SpecialDishCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var SpecialDishesDescriptionLabel: UILabel!
     @IBOutlet weak var SpecialDishesCaloriesLabel: UILabel!
     
-    func setUp(specialDishes: SpecialDish) {
+    func setUp(specialDishes: Dish) {
         SpecialDishesImage.kf.setImage(with: specialDishes.image?.asUrl)
         SpecialDishesTitleLabel.text = specialDishes.title
         SpecialDishesDescriptionLabel.text = specialDishes.description
-        SpecialDishesCaloriesLabel.text = specialDishes.formattedCalories
+        SpecialDishesCaloriesLabel.text = specialDishes.formatedCalories
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DishDetailsVC: UIViewController {
     
@@ -18,8 +19,17 @@ class DishDetailsVC: UIViewController {
         
     }
     
+    var dish: Dish!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        DishVCsetUp()
+    }
+    
+    private func DishVCsetUp() {
+        DishDetailsImage.kf.setImage(with: dish.image?.asUrl)
+        DishDetailsTitleLabel.text = dish.title
+        DishDetailsCaloriesLabel.text = dish.formatedCalories
+        DishDetailsDescreptionLabel.numberOfLines = 3
+        DishDetailsDescreptionLabel.text = dish.description
     }
 }

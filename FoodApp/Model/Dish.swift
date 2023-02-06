@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct PopDish {
+struct Dish {
     let id, title, image, description: String?
     let calories: Int?
     
