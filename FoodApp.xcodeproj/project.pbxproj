@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		235777FB298C9BF50067B42F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235777FA298C9BF50067B42F /* CardView.swift */; };
+		2366ECA22992B87A001A6DC4 /* TableViewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */; };
+		2366ECA52992B94F001A6DC4 /* CategoryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366ECA32992B94F001A6DC4 /* CategoryListTableViewCell.swift */; };
+		2366ECA62992B94F001A6DC4 /* CategoryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2366ECA42992B94F001A6DC4 /* CategoryListTableViewCell.xib */; };
 		23723A4D2988108600AE2C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A4C2988108600AE2C16 /* AppDelegate.swift */; };
 		23723A4F2988108600AE2C16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A4E2988108600AE2C16 /* SceneDelegate.swift */; };
 		23723A542988108600AE2C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23723A522988108600AE2C16 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		235777FA298C9BF50067B42F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewListVC.swift; sourceTree = "<group>"; };
+		2366ECA32992B94F001A6DC4 /* CategoryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewCell.swift; sourceTree = "<group>"; };
+		2366ECA42992B94F001A6DC4 /* CategoryListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryListTableViewCell.xib; sourceTree = "<group>"; };
 		23723A492988108600AE2C16 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23723A4C2988108600AE2C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23723A4E2988108600AE2C16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 				23C796B4298E33EF000E31BC /* PopularDishesCollectionViewCell.swift */,
 				23BD6B8E298FD1E3002B521E /* SpecialDishCollectionViewCell.swift */,
 				23BD6B94298FFF71002B521E /* DishDetailsVC.swift */,
+				2366ECA32992B94F001A6DC4 /* CategoryListTableViewCell.swift */,
+				2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 				23ADB771298AD65F0083D340 /* CategoryCollectionViewCell.xib */,
 				23C796B5298E33EF000E31BC /* PopularDishesCollectionViewCell.xib */,
 				23BD6B8F298FD1E3002B521E /* SpecialDishCollectionViewCell.xib */,
+				2366ECA42992B94F001A6DC4 /* CategoryListTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +250,7 @@
 			files = (
 				23ADB773298AD65F0083D340 /* CategoryCollectionViewCell.xib in Resources */,
 				23C796B7298E33EF000E31BC /* PopularDishesCollectionViewCell.xib in Resources */,
+				2366ECA62992B94F001A6DC4 /* CategoryListTableViewCell.xib in Resources */,
 				23723A592988108700AE2C16 /* LaunchScreen.storyboard in Resources */,
 				23723A562988108700AE2C16 /* Assets.xcassets in Resources */,
 				23BD6B91298FD1E3002B521E /* SpecialDishCollectionViewCell.xib in Resources */,
@@ -302,11 +312,13 @@
 				23BD6B90298FD1E3002B521E /* SpecialDishCollectionViewCell.swift in Sources */,
 				23C796B6298E33EF000E31BC /* PopularDishesCollectionViewCell.swift in Sources */,
 				23BD6B95298FFF71002B521E /* DishDetailsVC.swift in Sources */,
+				2366ECA22992B87A001A6DC4 /* TableViewListVC.swift in Sources */,
 				23ADB776298B1FFE0083D340 /* StringExtension.swift in Sources */,
 				2377BF902991689A00D80326 /* InstantiateExtension.swift in Sources */,
 				23C796B9298E3768000E31BC /* Dish.swift in Sources */,
 				23723A4F2988108600AE2C16 /* SceneDelegate.swift in Sources */,
 				23723A6B2988150D00AE2C16 /* OnBoardingVC.swift in Sources */,
+				2366ECA52992B94F001A6DC4 /* CategoryListTableViewCell.swift in Sources */,
 				23ADB772298AD65F0083D340 /* CategoryCollectionViewCell.swift in Sources */,
 				23723A712988872D00AE2C16 /* OnBoardingCollectionViewCell.swift in Sources */,
 				23723A6D298880CE00AE2C16 /* Constants.swift in Sources */,

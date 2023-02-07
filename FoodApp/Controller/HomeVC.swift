@@ -20,7 +20,7 @@ class HomeVC: UIViewController {
         .init(id: "2", title: "Food 2", image: "https://pngimg.com/d/pasta_PNG53.png"),
         .init(id: "3", title: "Food 3", image: "https://pngimg.com/d/pasta_PNG53.png"),
         .init(id: "4", title: "Food 4", image: "https://pngimg.com/d/pasta_PNG53.png"),
-        .init(id: "5", title: "Food 5", image: "https://pngimg.com/d/pasta_PNG53.png"),
+        .init(id: "5", title: "Food 5", image: "https://pngimg.com/d/pasta_PNG53.png")
     ]
     
     var populars: [Dish] = [
@@ -28,13 +28,13 @@ class HomeVC: UIViewController {
         .init(id: "2", title: "Popular Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
         .init(id: "3", title: "Popular Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400),
         .init(id: "4", title: "Popular Food 4", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 110),
-        .init(id: "5", title: "Popular Food 5", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever", calories: 320),
+        .init(id: "5", title: "Popular Food 5", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever", calories: 320)
     ]
     
     var specials: [Dish] = [
         .init(id: "1", title: "Special Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120),
         .init(id: "2", title: "Special Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
-        .init(id: "3", title: "Special Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400),
+        .init(id: "3", title: "Special Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400)
     ]
     
     //MARK: Life cycle
@@ -95,7 +95,9 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     //when the item is selected or tapped
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == FoodCategoryCollectionView {
-            
+            let vc = TableViewListVC.instatiate()
+            vc.category = categories[indexPath.row]
+            navigationController?.pushViewController(vc, animated: true)
         } else {
             let vc = DishDetailsVC.instatiate()
             // check which collection view is targeted and show it's information
