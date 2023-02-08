@@ -311,6 +311,9 @@
                     <navigationItem key="navigationItem" title="Yummie" id="cpY-M6-f97">
                         <barButtonItem key="rightBarButtonItem" image="cart.circle.fill" catalog="system" id="mWR-NX-Er7">
                             <color key="tintColor" red="0.63174768820000005" green="0.20596771480000001" blue="0.15947969079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="9ja-mF-FQx" kind="show" id="hLF-79-Aki"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -323,6 +326,39 @@
             </objects>
             <point key="canvasLocation" x="2087.7862595419847" y="-35.211267605633807"/>
         </scene>
+        <!--Orders ListVC-->
+        <scene sceneID="O1S-dG-tPU">
+            <objects>
+                <viewController storyboardIdentifier="OrdersListVC" id="9ja-mF-FQx" customClass="OrdersListVC" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ik-y9-bRY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1h3-Tl-LBs">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VHq-Ac-ePE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1h3-Tl-LBs" firstAttribute="top" secondItem="VHq-Ac-ePE" secondAttribute="top" id="3EU-7O-dEa"/>
+                            <constraint firstAttribute="bottom" secondItem="1h3-Tl-LBs" secondAttribute="bottom" id="MrD-cn-6ay"/>
+                            <constraint firstItem="1h3-Tl-LBs" firstAttribute="leading" secondItem="VHq-Ac-ePE" secondAttribute="leading" id="hkW-pm-l0Q"/>
+                            <constraint firstItem="1h3-Tl-LBs" firstAttribute="trailing" secondItem="VHq-Ac-ePE" secondAttribute="trailing" id="qDq-7O-mt1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xOw-9E-EBB">
+                        <barButtonItem key="backBarButtonItem" title=" " id="T9g-Hg-xHb"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="OrdersTableView" destination="1h3-Tl-LBs" id="T3f-UC-peq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayV-UR-xzt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2087.7862595419847" y="693.66197183098598"/>
+        </scene>
         <!--Dish DetailsVC-->
         <scene sceneID="o18-EY-K0g">
             <objects>
@@ -332,10 +368,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkJ-ds-GvS">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="567"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="574.33333333333337"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-rF-cAn">
-                                <rect key="frame" x="16" y="583" width="361" height="219"/>
+                                <rect key="frame" x="16" y="590.33333333333337" width="361" height="211.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YG1-hj-LW4">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="23"/>
@@ -355,16 +391,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-XS-U1m">
-                                        <rect key="frame" x="0.0" y="39" width="361" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="RIm-y3-zRB"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="39" width="361" height="40.666666666666657"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6V-ov-wFa">
-                                        <rect key="frame" x="0.0" y="103" width="361" height="50"/>
+                                        <rect key="frame" x="0.0" y="95.666666666666629" width="361" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="EjD-nM-i6S"/>
                                         </constraints>
@@ -378,7 +411,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-EK-bos">
-                                        <rect key="frame" x="0.0" y="169" width="361" height="50"/>
+                                        <rect key="frame" x="0.0" y="161.66666666666663" width="361" height="50"/>
                                         <color key="backgroundColor" red="0.67425859590000004" green="0.2198274798" blue="0.1702112321" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="LJl-mt-CSS"/>
@@ -397,6 +430,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="WAa-XS-U1m" firstAttribute="top" secondItem="YG1-hj-LW4" secondAttribute="bottom" constant="16" id="dnK-1R-Ubm"/>
+                                    <constraint firstItem="s6V-ov-wFa" firstAttribute="top" secondItem="WAa-XS-U1m" secondAttribute="bottom" constant="16" id="tD0-z1-lVC"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zBR-C7-QWV"/>
@@ -432,10 +469,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hhC-oh-ski">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hhC-oh-ski">
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="separatorColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gsA-Da-AFH"/>

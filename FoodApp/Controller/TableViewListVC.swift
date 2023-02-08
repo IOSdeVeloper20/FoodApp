@@ -37,8 +37,10 @@ class TableViewListVC: UIViewController {
     
 //MARK: Functions
     //Function that register the XIB cell
+    /*UINib: the name of nib cell file
+     forCellReuseIdentifier: the id that is set for the cell*/
     private func registerTableViewCell() {
-        tableView.register(UINib(/*nibName must be the real name of Xib file*/nibName: "CategoryListTableViewCell", bundle: nil), forCellReuseIdentifier: Constants.CategoriesTableView_ID)
+        tableView.register(UINib(/*nibName must be the real name of Xib file*/nibName: Constants.CategoriesTableView_ID, bundle: nil), forCellReuseIdentifier: Constants.CategoriesTableView_ID)
     }
 }
 
@@ -51,6 +53,8 @@ extension TableViewListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     //what each cell will display
+    /*withIdentifier: the id that is set for the cell
+     as >> the name of the controller class*/
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CategoriesTableView_ID, for: indexPath) as! CategoryListTableViewCell
         cell.tableViewSetUp(dish: dishes[indexPath.row])
@@ -58,7 +62,9 @@ extension TableViewListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     //when any cell is selected
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DishDetailsVC.instatiate()
+        vc.dish = dishes[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

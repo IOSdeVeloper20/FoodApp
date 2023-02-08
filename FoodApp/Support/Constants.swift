@@ -13,5 +13,7 @@ struct Constants {
     static let CategoryCell_ID = "CategoryCollectionViewCell"
     static let PopularDishesCell_ID = "PopularDishesCollectionViewCell"
     static let SpecialDishesCell_ID = "SpecialDishCollectionViewCell"
-    static let CategoriesTableView_ID = "CategoryListTableVC"
+    static let CategoriesTableView_ID = "CategoryListTableViewCell"
+    static let OrdersList_ID = "OrdersListVC"
 }
+//CategoryListTableVC

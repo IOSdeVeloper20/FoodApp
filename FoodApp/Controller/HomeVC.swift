@@ -49,6 +49,7 @@ class HomeVC: UIViewController {
         registerXibCell()
     }
     
+//MARK: Functions
     //function manually register for cell
     private func registerXibCell () {
         FoodCategoryCollectionView.register(UINib(/*nibName must be the real name of Xib file*/nibName: Constants.CategoryCell_ID, bundle: nil), forCellWithReuseIdentifier: Constants.CategoryCell_ID)
@@ -96,6 +97,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == FoodCategoryCollectionView {
             let vc = TableViewListVC.instatiate()
+            // send the data to set the title of vc(TableViewVC) controller only
             vc.category = categories[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         } else {

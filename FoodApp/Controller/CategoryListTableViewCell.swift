@@ -31,4 +31,9 @@ class CategoryListTableViewCell: UITableViewCell {
         TableViewCellDescriptionLabel.text = dish.description
     }
     
+    func orderSetUp(orders: Order) {
+        TableViewCellImage.kf.setImage(with: orders.dish?.image?.asUrl)
+        tableViewCellTitleLabel.text = orders.dish?.title
+        TableViewCellDescriptionLabel.text = orders.personName
+    }
 }

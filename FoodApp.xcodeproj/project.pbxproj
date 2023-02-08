@@ -11,6 +11,8 @@
 		2366ECA22992B87A001A6DC4 /* TableViewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */; };
 		2366ECA52992B94F001A6DC4 /* CategoryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366ECA32992B94F001A6DC4 /* CategoryListTableViewCell.swift */; };
 		2366ECA62992B94F001A6DC4 /* CategoryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2366ECA42992B94F001A6DC4 /* CategoryListTableViewCell.xib */; };
+		2366ECA82992EF79001A6DC4 /* OrdersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366ECA72992EF79001A6DC4 /* OrdersListVC.swift */; };
+		2366ECAA2992F0F5001A6DC4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366ECA92992F0F5001A6DC4 /* Order.swift */; };
 		23723A4D2988108600AE2C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A4C2988108600AE2C16 /* AppDelegate.swift */; };
 		23723A4F2988108600AE2C16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A4E2988108600AE2C16 /* SceneDelegate.swift */; };
 		23723A542988108600AE2C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23723A522988108600AE2C16 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 		2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewListVC.swift; sourceTree = "<group>"; };
 		2366ECA32992B94F001A6DC4 /* CategoryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewCell.swift; sourceTree = "<group>"; };
 		2366ECA42992B94F001A6DC4 /* CategoryListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryListTableViewCell.xib; sourceTree = "<group>"; };
+		2366ECA72992EF79001A6DC4 /* OrdersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListVC.swift; sourceTree = "<group>"; };
+		2366ECA92992F0F5001A6DC4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		23723A492988108600AE2C16 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23723A4C2988108600AE2C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23723A4E2988108600AE2C16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				23BD6B94298FFF71002B521E /* DishDetailsVC.swift */,
 				2366ECA32992B94F001A6DC4 /* CategoryListTableViewCell.swift */,
 				2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */,
+				2366ECA72992EF79001A6DC4 /* OrdersListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				23723A6E298883FE00AE2C16 /* OnBoardingSlide.swift */,
 				23ADB76A298ACF5D0083D340 /* FoodCategoryCellInfo.swift */,
 				23C796B8298E3768000E31BC /* Dish.swift */,
+				2366ECA92992F0F5001A6DC4 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 			files = (
 				23723A4D2988108600AE2C16 /* AppDelegate.swift in Sources */,
 				23E2D896298937F400F31400 /* HomeVC.swift in Sources */,
+				2366ECAA2992F0F5001A6DC4 /* Order.swift in Sources */,
 				23BD6B90298FD1E3002B521E /* SpecialDishCollectionViewCell.swift in Sources */,
 				23C796B6298E33EF000E31BC /* PopularDishesCollectionViewCell.swift in Sources */,
 				23BD6B95298FFF71002B521E /* DishDetailsVC.swift in Sources */,
@@ -320,6 +327,7 @@
 				23723A6B2988150D00AE2C16 /* OnBoardingVC.swift in Sources */,
 				2366ECA52992B94F001A6DC4 /* CategoryListTableViewCell.swift in Sources */,
 				23ADB772298AD65F0083D340 /* CategoryCollectionViewCell.swift in Sources */,
+				2366ECA82992EF79001A6DC4 /* OrdersListVC.swift in Sources */,
 				23723A712988872D00AE2C16 /* OnBoardingCollectionViewCell.swift in Sources */,
 				23723A6D298880CE00AE2C16 /* Constants.swift in Sources */,
 				23723A6F298883FE00AE2C16 /* OnBoardingSlide.swift in Sources */,
