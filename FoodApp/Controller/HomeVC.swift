@@ -40,6 +40,12 @@ class HomeVC: UIViewController {
     //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let service = NetworkService()
+        let request = service.createRequest(route: .temp, method: .post, parameters: ["firstName" : "Ahmed", "lastName" : "Sherif"])
+        print("The url is : \(request?.url)")
+        print("The body is : \(request?.httpBody)")
+
         FoodCategoryCollectionView.dataSource = self
         FoodCategoryCollectionView.delegate = self
         popularDishesCollectionView.dataSource = self

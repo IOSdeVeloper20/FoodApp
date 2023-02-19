@@ -7,7 +7,7 @@
 
 import Foundation
 
-// to use a string as URL for images
+// to use a string as URL
 extension String {
     var asUrl: URL? {
         return URL(string: self)
