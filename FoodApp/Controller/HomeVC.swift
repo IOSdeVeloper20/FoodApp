@@ -24,27 +24,33 @@ class HomeVC: UIViewController {
     ]
     
     var populars: [Dish] = [
-        .init(id: "1", title: "Popular Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120),
-        .init(id: "2", title: "Popular Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
-        .init(id: "3", title: "Popular Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400),
-        .init(id: "4", title: "Popular Food 4", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 110),
-        .init(id: "5", title: "Popular Food 5", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever", calories: 320)
+        .init(id: "1", name: "Popular Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120),
+        .init(id: "2", name: "Popular Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
+        .init(id: "3", name: "Popular Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400),
+        .init(id: "4", name: "Popular Food 4", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 110),
+        .init(id: "5", name: "Popular Food 5", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever", calories: 320)
     ]
     
     var specials: [Dish] = [
-        .init(id: "1", title: "Special Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120),
-        .init(id: "2", title: "Special Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
-        .init(id: "3", title: "Special Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400)
+        .init(id: "1", name: "Special Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120),
+        .init(id: "2", name: "Special Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
+        .init(id: "3", name: "Special Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400)
     ]
     
     //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let service = NetworkService()
-        let request = service.createRequest(route: .temp, method: .post, parameters: ["firstName" : "Ahmed", "lastName" : "Sherif"])
-        print("The url is : \(request?.url)")
-        print("The body is : \(request?.httpBody)")
+        NetworkService.shared.myFirstRequest { (result) in
+            switch result {
+            case .success(let data):
+                for dish in data {
+                    print(dish.name ?? "no names")
+                }
+            case .failure(let error):
+                print("The error is: \(error.localizedDescription)")
+            }
+        }
 
         FoodCategoryCollectionView.dataSource = self
         FoodCategoryCollectionView.delegate = self

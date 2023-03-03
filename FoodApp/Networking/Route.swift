@@ -16,7 +16,7 @@ enum Route {
     /// to make the routes acceses easily (extension for routes)
     var description: String {
         switch self {
-        case .temp: return "/temp"
+        case .temp: return "/dishes/cat1"
         }
     }
 }

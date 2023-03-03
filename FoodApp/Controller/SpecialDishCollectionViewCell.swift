@@ -16,7 +16,7 @@ class SpecialDishCollectionViewCell: UICollectionViewCell {
     
     func setUp(specialDishes: Dish) {
         SpecialDishesImage.kf.setImage(with: specialDishes.image?.asUrl)
-        SpecialDishesTitleLabel.text = specialDishes.title
+        SpecialDishesTitleLabel.text = specialDishes.name
         SpecialDishesDescriptionLabel.text = specialDishes.description
         SpecialDishesCaloriesLabel.text = specialDishes.formatedCalories
     }

@@ -16,4 +16,3 @@ struct Constants {
     static let CategoriesTableView_ID = "CategoryListTableViewCell"
     static let OrdersList_ID = "OrdersListVC"
 }
-//CategoryListTableVC

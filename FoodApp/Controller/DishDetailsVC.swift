@@ -27,7 +27,7 @@ class DishDetailsVC: UIViewController {
     
     private func DishVCsetUp() {
         DishDetailsImage.kf.setImage(with: dish.image?.asUrl)
-        DishDetailsTitleLabel.text = dish.title
+        DishDetailsTitleLabel.text = dish.name
         DishDetailsCaloriesLabel.text = dish.formatedCalories
         DishDetailsDescreptionLabel.numberOfLines = 3
         DishDetailsDescreptionLabel.text = dish.description

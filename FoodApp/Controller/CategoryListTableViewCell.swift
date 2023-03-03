@@ -27,13 +27,13 @@ class CategoryListTableViewCell: UITableViewCell {
     
      func tableViewSetUp(dish: Dish) {
         TableViewCellImage.kf.setImage(with: dish.image?.asUrl)
-        tableViewCellTitleLabel.text = dish.title
+        tableViewCellTitleLabel.text = dish.name
         TableViewCellDescriptionLabel.text = dish.description
     }
     
     func orderSetUp(orders: Order) {
         TableViewCellImage.kf.setImage(with: orders.dish?.image?.asUrl)
-        tableViewCellTitleLabel.text = orders.dish?.title
+        tableViewCellTitleLabel.text = orders.dish?.name
         TableViewCellDescriptionLabel.text = orders.personName
     }
 }

@@ -8,8 +8,8 @@
 import Foundation
 
 
-struct Dish {
-    let id, title, image, description: String?
+struct Dish: Codable {
+    let id, name, image, description: String?
     let calories: Int?
     
     var formatedCalories: String {
