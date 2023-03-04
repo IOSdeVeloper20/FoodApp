@@ -14,11 +14,12 @@ struct NetworkService {
     
     private init() {}
     
-    func myFirstRequest(completion: @escaping(Result<[Dish],Error>) -> Void) {
-        reuqest(route: .temp, method: .get, completion: completion )
+    func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>) -> Void){
+        request(route: .fetchAllCategories, method: .get, completion: completion)
     }
+    
     /*hint : @escaping means the closure will out live even after the function is excuted*/
-    private func reuqest<T: Codable>(route: Route,
+    private func request<T: Codable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
                                      completion: @escaping(Result<T, Error>) -> Void) {

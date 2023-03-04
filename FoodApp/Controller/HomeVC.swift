@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class HomeVC: UIViewController {
     
@@ -15,42 +16,13 @@ class HomeVC: UIViewController {
     @IBOutlet weak var SpecialDishesCollectionView: UICollectionView!
     
     //MARK: Variables
-    var categories: [FoodCellInfo] = [
-        .init(id: "1", title: "Food 1", image: "https://pngimg.com/d/pasta_PNG53.png"),
-        .init(id: "2", title: "Food 2", image: "https://pngimg.com/d/pasta_PNG53.png"),
-        .init(id: "3", title: "Food 3", image: "https://pngimg.com/d/pasta_PNG53.png"),
-        .init(id: "4", title: "Food 4", image: "https://pngimg.com/d/pasta_PNG53.png"),
-        .init(id: "5", title: "Food 5", image: "https://pngimg.com/d/pasta_PNG53.png")
-    ]
-    
-    var populars: [Dish] = [
-        .init(id: "1", name: "Popular Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120),
-        .init(id: "2", name: "Popular Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
-        .init(id: "3", name: "Popular Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400),
-        .init(id: "4", name: "Popular Food 4", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 110),
-        .init(id: "5", name: "Popular Food 5", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever best Food ever", calories: 320)
-    ]
-    
-    var specials: [Dish] = [
-        .init(id: "1", name: "Special Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120),
-        .init(id: "2", name: "Special Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 150),
-        .init(id: "3", name: "Special Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 400)
-    ]
+    var categories: [FoodCellInfo] = []
+    var populars: [Dish] = []
+    var specials: [Dish] = []
     
     //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NetworkService.shared.myFirstRequest { (result) in
-            switch result {
-            case .success(let data):
-                for dish in data {
-                    print(dish.name ?? "no names")
-                }
-            case .failure(let error):
-                print("The error is: \(error.localizedDescription)")
-            }
-        }
 
         FoodCategoryCollectionView.dataSource = self
         FoodCategoryCollectionView.delegate = self
@@ -59,6 +31,24 @@ class HomeVC: UIViewController {
         SpecialDishesCollectionView.dataSource = self
         SpecialDishesCollectionView.delegate = self
         registerXibCell()
+        
+        ProgressHUD.show()
+        NetworkService.shared.fetchAllCategories { [weak self] (result) in
+            switch result {
+            case .success(let allDishes):
+                ProgressHUD.dismiss()
+                self?.categories = allDishes.categories ?? []
+                self?.populars = allDishes.populars ?? []
+                self?.specials = allDishes.specials ?? []
+                
+                self?.FoodCategoryCollectionView.reloadData()
+                self?.popularDishesCollectionView.reloadData()
+                self?.SpecialDishesCollectionView.reloadData()
+                
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     
 //MARK: Functions

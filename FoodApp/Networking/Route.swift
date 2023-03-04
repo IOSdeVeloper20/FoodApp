@@ -11,12 +11,12 @@ enum Route {
     
     static let baseURL = "https://yummie.glitch.me"
     
-    case temp
+    case fetchAllCategories
     
     /// to make the routes acceses easily (extension for routes)
     var description: String {
         switch self {
-        case .temp: return "/dishes/cat1"
+        case .fetchAllCategories: return "/dish-categories"
         }
     }
 }

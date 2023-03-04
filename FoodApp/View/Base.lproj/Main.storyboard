@@ -367,11 +367,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkJ-ds-GvS">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="574.33333333333337"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="rkJ-ds-GvS">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="594.66666666666663"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-rF-cAn">
-                                <rect key="frame" x="16" y="590.33333333333337" width="361" height="211.66666666666663"/>
+                                <rect key="frame" x="16" y="610.66666666666663" width="361" height="191.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YG1-hj-LW4">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="23"/>
@@ -390,14 +390,14 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-XS-U1m">
-                                        <rect key="frame" x="0.0" y="39" width="361" height="40.666666666666657"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-XS-U1m">
+                                        <rect key="frame" x="0.0" y="39" width="361" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6V-ov-wFa">
-                                        <rect key="frame" x="0.0" y="95.666666666666629" width="361" height="50"/>
+                                        <rect key="frame" x="0.0" y="75.333333333333371" width="361" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="EjD-nM-i6S"/>
                                         </constraints>
@@ -411,7 +411,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-EK-bos">
-                                        <rect key="frame" x="0.0" y="161.66666666666663" width="361" height="50"/>
+                                        <rect key="frame" x="0.0" y="141.33333333333337" width="361" height="50"/>
                                         <color key="backgroundColor" red="0.67425859590000004" green="0.2198274798" blue="0.1702112321" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="LJl-mt-CSS"/>

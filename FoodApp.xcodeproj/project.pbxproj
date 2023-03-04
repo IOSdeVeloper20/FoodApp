@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234C5FC329B393AF0046A173 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C5FC229B393AF0046A173 /* AllDishes.swift */; };
 		235777FB298C9BF50067B42F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235777FA298C9BF50067B42F /* CardView.swift */; };
 		23639A2829B278630097F926 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23639A2729B278630097F926 /* APIResponse.swift */; };
 		2366ECA22992B87A001A6DC4 /* TableViewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		234C5FC229B393AF0046A173 /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
 		235777FA298C9BF50067B42F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		23639A2729B278630097F926 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		2366ECA12992B87A001A6DC4 /* TableViewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewListVC.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				23ADB76A298ACF5D0083D340 /* FoodCategoryCellInfo.swift */,
 				23C796B8298E3768000E31BC /* Dish.swift */,
 				2366ECA92992F0F5001A6DC4 /* Order.swift */,
+				234C5FC229B393AF0046A173 /* AllDishes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				23C796B6298E33EF000E31BC /* PopularDishesCollectionViewCell.swift in Sources */,
 				23BD6B95298FFF71002B521E /* DishDetailsVC.swift in Sources */,
 				2366ECA22992B87A001A6DC4 /* TableViewListVC.swift in Sources */,
+				234C5FC329B393AF0046A173 /* AllDishes.swift in Sources */,
 				23ADB776298B1FFE0083D340 /* StringExtension.swift in Sources */,
 				23A08C3629A1A1B100F468D0 /* Method.swift in Sources */,
 				2377BF902991689A00D80326 /* InstantiateExtension.swift in Sources */,
