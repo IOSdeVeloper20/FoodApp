@@ -12,11 +12,13 @@ class OnBoardingVC: UIViewController {
     @IBOutlet weak var CollectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var PageControl: UIPageControl!
+    
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         if (currentPage == slides.count - 1){
             let controller = storyboard?.instantiateViewController(withIdentifier: Constants.mainNavigation) as! UINavigationController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
+            UserDefaults.standard.hasOnboarded = true
             //present the nvigation controller which will present other viewControllers
             present(controller, animated: true, completion: nil)
         } else {

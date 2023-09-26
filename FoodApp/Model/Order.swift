@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Order {
-    let id, personName: String?
+struct Order: Codable {
+    let id, name: String?
     let dish: Dish?
 }

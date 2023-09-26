@@ -34,6 +34,6 @@ class CategoryListTableViewCell: UITableViewCell {
     func orderSetUp(orders: Order) {
         TableViewCellImage.kf.setImage(with: orders.dish?.image?.asUrl)
         tableViewCellTitleLabel.text = orders.dish?.name
-        TableViewCellDescriptionLabel.text = orders.personName
+        TableViewCellDescriptionLabel.text = orders.name
     }
 }

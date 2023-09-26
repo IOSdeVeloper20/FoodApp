@@ -6,18 +6,13 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class OrdersListVC: UIViewController {
     
     @IBOutlet weak var OrdersTableView: UITableView!
     
-    var orders: [Order] = [
-        .init(id: "1", personName: "Ahmed", dish: .init(id: "1", name: "Popular Food 1", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120)),
-        .init(id: "2", personName: "Mayar", dish: .init(id: "2", name: "Popular Food 2", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120)),
-        .init(id: "3", personName: "Aya", dish: .init(id: "3", name: "Popular Food 3", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120)),
-        .init(id: "4", personName: "Raghad", dish: .init(id: "4", name: "Popular Food 4", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120)),
-        .init(id: "5", personName: "Sherif", dish: .init(id: "5", name: "Popular Food 5", image: "https://pngimg.com/d/pasta_PNG53.png", description: "best Food ever", calories: 120))
-    ]
+    var orders: [Order] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +22,22 @@ class OrdersListVC: UIViewController {
         
         title = "Orders"
         registerTableViewCell()
+        
+        ProgressHUD.show()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NetworkService.shared.fetchOrders { [weak self] (result) in
+            switch result {
+            case.success(let order):
+                print("orders::: \(order)")
+                ProgressHUD.dismiss()
+                self?.orders = order
+                self?.OrdersTableView.reloadData()
+            case.failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     
 //MARK: Functions

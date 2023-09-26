@@ -26,9 +26,13 @@
 		23723A6F298883FE00AE2C16 /* OnBoardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A6E298883FE00AE2C16 /* OnBoardingSlide.swift */; };
 		23723A712988872D00AE2C16 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23723A702988872D00AE2C16 /* OnBoardingCollectionViewCell.swift */; };
 		2377BF902991689A00D80326 /* InstantiateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377BF8F2991689A00D80326 /* InstantiateExtension.swift */; };
+		2390CC652A87BAB0007B7DAF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2390CC642A87BAB0007B7DAF /* Kingfisher */; };
+		2390CC682A87BB5A007B7DAF /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 2390CC672A87BB5A007B7DAF /* ProgressHUD */; };
+		2390CC6B2A87BB9F007B7DAF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2390CC6A2A87BB9F007B7DAF /* IQKeyboardManagerSwift */; };
 		23A08C3229A1A03400F468D0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A08C3129A1A03400F468D0 /* NetworkService.swift */; };
 		23A08C3429A1A0EF00F468D0 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A08C3329A1A0EF00F468D0 /* Route.swift */; };
 		23A08C3629A1A1B100F468D0 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A08C3529A1A1B100F468D0 /* Method.swift */; };
+		23A0D5582AC389DC00910FE4 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0D5572AC389DC00910FE4 /* UserDefaultsExtension.swift */; };
 		23ADB76B298ACF5D0083D340 /* FoodCategoryCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADB76A298ACF5D0083D340 /* FoodCategoryCellInfo.swift */; };
 		23ADB772298AD65F0083D340 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ADB770298AD65F0083D340 /* CategoryCollectionViewCell.swift */; };
 		23ADB773298AD65F0083D340 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23ADB771298AD65F0083D340 /* CategoryCollectionViewCell.xib */; };
@@ -40,7 +44,6 @@
 		23C796B7298E33EF000E31BC /* PopularDishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C796B5298E33EF000E31BC /* PopularDishesCollectionViewCell.xib */; };
 		23C796B9298E3768000E31BC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C796B8298E3768000E31BC /* Dish.swift */; };
 		23E2D896298937F400F31400 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2D895298937F400F31400 /* HomeVC.swift */; };
-		8A2610F5893388700783C80A /* Pods_FoodApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCF060A1750240E9F672853 /* Pods_FoodApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,7 @@
 		23A08C3129A1A03400F468D0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		23A08C3329A1A0EF00F468D0 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		23A08C3529A1A1B100F468D0 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		23A0D5572AC389DC00910FE4 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		23ADB76A298ACF5D0083D340 /* FoodCategoryCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCellInfo.swift; sourceTree = "<group>"; };
 		23ADB770298AD65F0083D340 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		23ADB771298AD65F0083D340 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -79,9 +83,6 @@
 		23C796B5298E33EF000E31BC /* PopularDishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDishesCollectionViewCell.xib; sourceTree = "<group>"; };
 		23C796B8298E3768000E31BC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		23E2D895298937F400F31400 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		4B4402364CD929A108BEFF50 /* Pods-FoodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.debug.xcconfig"; path = "Target Support Files/Pods-FoodApp/Pods-FoodApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6DCF060A1750240E9F672853 /* Pods_FoodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2294CB8116FE1F6355FFC28 /* Pods-FoodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.release.xcconfig"; path = "Target Support Files/Pods-FoodApp/Pods-FoodApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2610F5893388700783C80A /* Pods_FoodApp.framework in Frameworks */,
+				2390CC652A87BAB0007B7DAF /* Kingfisher in Frameworks */,
+				2390CC682A87BB5A007B7DAF /* ProgressHUD in Frameworks */,
+				2390CC6B2A87BB9F007B7DAF /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +104,6 @@
 			children = (
 				23723A4B2988108600AE2C16 /* FoodApp */,
 				23723A4A2988108600AE2C16 /* Products */,
-				384DD4716C345105A44423A1 /* Pods */,
-				BB522978D080B5EFA6690220 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,25 +200,9 @@
 				23ADB775298B1FFE0083D340 /* StringExtension.swift */,
 				235777FA298C9BF50067B42F /* CardView.swift */,
 				2377BF8F2991689A00D80326 /* InstantiateExtension.swift */,
+				23A0D5572AC389DC00910FE4 /* UserDefaultsExtension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		384DD4716C345105A44423A1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4B4402364CD929A108BEFF50 /* Pods-FoodApp.debug.xcconfig */,
-				B2294CB8116FE1F6355FFC28 /* Pods-FoodApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		BB522978D080B5EFA6690220 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6DCF060A1750240E9F672853 /* Pods_FoodApp.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,17 +212,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23723A5D2988108700AE2C16 /* Build configuration list for PBXNativeTarget "FoodApp" */;
 			buildPhases = (
-				E2F79466E4DED18B4248D595 /* [CP] Check Pods Manifest.lock */,
 				23723A452988108600AE2C16 /* Sources */,
 				23723A462988108600AE2C16 /* Frameworks */,
 				23723A472988108600AE2C16 /* Resources */,
-				DF369CCB24DE1A3C13CBDA2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FoodApp;
+			packageProductDependencies = (
+				2390CC642A87BAB0007B7DAF /* Kingfisher */,
+				2390CC672A87BB5A007B7DAF /* ProgressHUD */,
+				2390CC6A2A87BB9F007B7DAF /* IQKeyboardManagerSwift */,
+			);
 			productName = FoodApp;
 			productReference = 23723A492988108600AE2C16 /* FoodApp.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +254,11 @@
 				Base,
 			);
 			mainGroup = 23723A402988108600AE2C16;
+			packageReferences = (
+				2390CC632A87BAB0007B7DAF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				2390CC662A87BB5A007B7DAF /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				2390CC692A87BB9F007B7DAF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 23723A4A2988108600AE2C16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,48 +285,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		DF369CCB24DE1A3C13CBDA2F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E2F79466E4DED18B4248D595 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FoodApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		23723A452988108600AE2C16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -346,6 +297,7 @@
 				23C796B6298E33EF000E31BC /* PopularDishesCollectionViewCell.swift in Sources */,
 				23BD6B95298FFF71002B521E /* DishDetailsVC.swift in Sources */,
 				2366ECA22992B87A001A6DC4 /* TableViewListVC.swift in Sources */,
+				23A0D5582AC389DC00910FE4 /* UserDefaultsExtension.swift in Sources */,
 				234C5FC329B393AF0046A173 /* AllDishes.swift in Sources */,
 				23ADB776298B1FFE0083D340 /* StringExtension.swift in Sources */,
 				23A08C3629A1A1B100F468D0 /* Method.swift in Sources */,
@@ -506,7 +458,6 @@
 		};
 		23723A5E2988108700AE2C16 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B4402364CD929A108BEFF50 /* Pods-FoodApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,7 +468,6 @@
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -527,6 +477,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ahmedsherif.FoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,7 +488,6 @@
 		};
 		23723A5F2988108700AE2C16 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2294CB8116FE1F6355FFC28 /* Pods-FoodApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -546,7 +498,6 @@
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,6 +507,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ahmedsherif.FoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -584,6 +538,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2390CC632A87BAB0007B7DAF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		2390CC662A87BB5A007B7DAF /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+		2390CC692A87BB9F007B7DAF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2390CC642A87BAB0007B7DAF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2390CC632A87BAB0007B7DAF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		2390CC672A87BB5A007B7DAF /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2390CC662A87BB5A007B7DAF /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		2390CC6A2A87BB9F007B7DAF /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2390CC692A87BB9F007B7DAF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23723A412988108600AE2C16 /* Project object */;
 }
