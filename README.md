@@ -17,5 +17,3 @@ FoodApp is a food ordering iOS application that could be used by any restaurant 
 <img src="https://github.com/IOSdeVeloper20/FoodApp/assets/81517945/2ff7b46e-1a75-4f1f-bf0e-653c9b5ca77d" width="170" height="360" />
 <img src="https://github.com/IOSdeVeloper20/FoodApp/assets/81517945/d453f916-bfd6-4f9d-bdae-8fb919737477" width="170" height="360" />
 
-## Tutorial Source
-This code is based on a tutorial from the Emmanuel Okwara YouTube channel which covers building a food ordering app (Yummie). For a detailed walkthrough, refer to the tutorial on his channel.
